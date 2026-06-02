@@ -15,9 +15,9 @@ totalDays=0;
     }
 
     void addDailySteps(int stepCount) {
-totalSteps+=steps;
-totalDays=totalDays+1;
-if(steps>=minSteps){
+totalSteps+=stepCount;
+totalDays++;
+if(stepCount>=minSteps){
     actDays++;
 }
 
@@ -29,8 +29,7 @@ if(steps>=minSteps){
 if(totalDays==0){
 return 0.0;
 }
-else{
+else
     return (double)totalSteps/totalDays;
-}
     }
 }
